@@ -16,7 +16,7 @@ jobs:
         # Provide the password for postgres
         env:
           POSTGRES_USER: pointercrate
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_PASSWORD: asdf
           POSTGRES_DB: postgres
         ports:
           - 5432:5432

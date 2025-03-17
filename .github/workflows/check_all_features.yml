@@ -52,11 +52,11 @@ jobs:
           command: sqlx
           args: migrate run
         env:
-          DATABASE_URL: postgresql://pointercrate:postgres@localhost/postgres
+          DATABASE_URL: postgresql://pointercrate:asdf@localhost/pointercrate
 
       - name: Check
         uses: actions-rs/cargo@v1
         with:
           command: check-all-features
         env:
-          DATABASE_URL: postgresql://pointercrate:postgres@localhost/postgres
+          DATABASE_URL: postgresql://pointercrate:asdf@localhost/pointercrate

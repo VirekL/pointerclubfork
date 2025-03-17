@@ -56,7 +56,7 @@ jobs:
           command: sqlx
           args: migrate run
         env:
-          DATABASE_URL: postgresql://pointercrate:postgres@localhost/postgres
+          DATABASE_URL: postgresql://pointercrate:asdf@localhost/pointercrate
 
       - name: Run tests
         uses: actions-rs/cargo@v1
@@ -64,7 +64,7 @@ jobs:
           command: test
           args: --all-features
         env:
-          DATABASE_URL: postgresql://pointercrate:postgres@localhost/postgres
+          DATABASE_URL: postgresql://pointercrate:asdf@localhost/pointercrate
           RUST_BACKTRACE: 1
           RUSTFLAGS: -Cinstrument-coverage
           LIST_SIZE: 75
